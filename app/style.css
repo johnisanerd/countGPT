@@ -1,0 +1,10 @@
+#text-input {
+    width: 500px;
+    height: 300px;
+  }
+  #token-count {
+    font-size: 20px;
+  }
+  #token-ratio {
+    font-size: 20px;
+  }  

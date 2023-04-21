@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "Token Counter",
+    "version": "1.0",
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "description": "A Chrome app to count tokens in GPT-3.5 and GPT-4 entries.",
+    "permissions": [
+      "unlimitedStorage",
+      "notifications"
+    ]
+}
