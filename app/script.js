@@ -1,10 +1,9 @@
 const textInput = document.getElementById("text-input");
-const tokenCount = document.getElementById("token-count");
 const tokenRatio = document.getElementById("token-ratio");
 const toggleModel = document.getElementById("toggle-model");
-const copyButton = document.createElement("button");
-const clipButton = document.createElement("button");
-const removeExcessButton = document.createElement("button");
+const copyButton = document.getElementById("copy-button");
+const clipButton = document.getElementById("clip-button");
+const removeExcessButton = document.getElementById("remove-whitespace-button");
 let model = "GPT-3.5";
 let maxTokens = 0;
 
@@ -22,7 +21,6 @@ toggleModel.addEventListener("click", function() {
 });
 
 textInput.addEventListener("input", function() {
-  updateTokenCount();
   updateTokenRatio();
 });
 
@@ -39,7 +37,6 @@ clipButton.addEventListener("click", function() {
   if (tokens.length > maxTokens) {
     textInput.value = tokens.slice(0, maxTokens).join(" ");
   }
-  updateTokenCount();
   updateTokenRatio();
 });
 
@@ -49,19 +46,8 @@ removeExcessButton.addEventListener("click", function() {
   text = text.replace(/\s{2,}/g, " ");
   text = text.replace(/\n{2,}/g, "\n");
   textInput.value = text;
-  updateTokenCount();
   updateTokenRatio();
 });
-
-document.body.appendChild(copyButton);
-document.body.appendChild(clipButton);
-document.body.appendChild(removeExcessButton);
-
-function updateTokenCount() {
-  const text = textInput.value;
-  const tokens = text.split(" ");
-  tokenCount.innerHTML = `Token Count: ${tokens.length}`;
-}
 
 function updateTokenRatio() {
   const text = textInput.value;
