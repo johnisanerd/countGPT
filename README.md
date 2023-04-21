@@ -1,4 +1,10 @@
-Chrome App
+# Chrome Extension:  Count Tokens
+
+# Purpose
+
+We wanted a Chrome Plugin that would count tokens, and help us manage ChatGPT inputs for projects.
+
+# Procedure
 
 To package the code into a Chrome app, you'll need to create a manifest file and package the HTML, JavaScript, and CSS files into a .zip file. Here are the steps to do this:
 
