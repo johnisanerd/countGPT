@@ -43,8 +43,8 @@ clipButton.addEventListener("click", function() {
 removeExcessButton.innerHTML = "Remove Excess Whitespace";
 removeExcessButton.addEventListener("click", function() {
   let text = textInput.value;
-  text = text.replace(/\s{2,}/g, " ");
-  text = text.replace(/\n{2,}/g, "\n");
+  text = text.replace(/(?<!\n)\s+/g, " "); // Replace multiple spaces with single space, excluding new lines
+  text = text.replace(/\n\s+/g, "\n"); // Replace spaces followed by new line with just a new line
   textInput.value = text;
   updateTokenRatio();
 });
