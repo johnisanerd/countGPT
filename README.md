@@ -4,6 +4,8 @@
 
 I found myself pasting too much text into [ChatGPT](https://chat.openai.com/) especially when I wanted to analyze a full document; I'd write a nice prompt, paste the document into ChatGPT, and then get annoying errors that I had put too much information in.  Then I'd spend a lot of time slowly pairing down the input, hoping and guessing it was below the token threshold.   While there are some plugins built to do this, I was skeptical of where the data was going.
 
+You can [install the plugin from the Chrome Store here](https://chrome.google.com/webstore/detail/token-counter/piokpegenmfhmijblebapnpdkpkjapfk).
+
 So I wrote a quick chrome plugin to count the tokens (or estimate them) and to reduce the size of the text, remove whitespace, and easily copy text between windows. It saves nothing, it requires no password or key.
 
 It's a work in progress, and it's open-source; I would genuinely appreciate any help in making it more useful! MIT License to make it as permissible as possible. This is my first chrome plugin, and I used ChatGPT to help me write it.
