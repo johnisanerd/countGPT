@@ -1,8 +1,8 @@
-# Chrome Extension:  Count Tokens
+# Chrome Extension:  Count Words
 
 # Purpose
 
-I found myself pasting too much text into [ChatGPT](https://chat.openai.com/) especially when I wanted to analyze a full document; I'd write a nice prompt, paste the document into ChatGPT, and then get annoying errors that I had put too much information in.  Then I'd spend a lot of time slowly pairing down the input, hoping and guessing it was below the token threshold.   While there are some plugins built to do this, I was skeptical of where the data was going.
+I found myself pasting too much text into [ChatGPT](https://chat.openai.com/) especially when I wanted to analyze a full document; I'd write a nice prompt, paste the document into ChatGPT, and then get annoying errors that I was over the word count.  Then I'd spend a lot of time slowly pairing down the input, hoping and guessing it was below the token threshold.   While there are some plugins built to do this, I was skeptical of where the data was going.
 
 So I wrote a quick chrome plugin to count the tokens (or estimate them) and to reduce the size of the text, remove whitespace, and easily copy text between windows. It saves nothing, it requires no password or key.
 
