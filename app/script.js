@@ -5,7 +5,7 @@ const copyButton = document.getElementById("copy-button");
 const clipButton = document.getElementById("clip-button");
 const removeExcessButton = document.getElementById("remove-whitespace-button");
 let model = "GPT-3.5";
-let maxTokens = 0;
+let maxTokens = 500;
 
 toggleModel.addEventListener("click", function() {
   if (model === "GPT-3.5") {
