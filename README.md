@@ -16,7 +16,7 @@ It's a work in progress, and it's open-source; I would genuinely appreciate any 
 2. Protect your privacy.
 3. Remove whitespace from a prompt.  
 
-# Procedure
+# Packaging Procedure
 
 To package the code into a Chrome app, you'll need to create a manifest file and package the HTML, JavaScript, and CSS files into a .zip file. Here are the steps to do this:
 
@@ -29,3 +29,38 @@ Create a new file named "manifest.json" in the same directory. This file will co
     To install the app, follow the steps for installing a Chrome app in developer mode, and select the .crx file instead of a directory.
 
 That's it! You now have a packaged Chrome app that can be installed and run in Google Chrome. You can submit this app to the Chrome Web Store for review and distribution, or share it with others by providing them with the .crx file.
+
+# Publish to Chrome Store
+
+Here are the steps to turn the code into a Chrome app:
+
+1. Open Google Chrome and go to the [Chrome Web Store](https://chrome.google.com/webstore/devconsole/).
+
+2. Click on the "Developer Dashboard" button.
+
+3. Sign in with your Google account. Click on the "Add New Item" button.
+
+4. Fill out the form with the basic information about your app, such as the name, description, and screenshots.
+
+5. In the "Extension" section, select "Packaged App".
+
+6. Click on the "Upload .zip file" button and select the .zip file containing your app's code.
+
+7. Click on the "Publish Item" button to submit your app for review.
+
+Once your app is approved, it will be available for download in the Chrome Web Store.
+
+To install your app, go to the Chrome Web Store, find your app, and click on the "Add to Chrome" button.
+
+Your app will now be installed and available to use from the Chrome App Launcher.
+
+That's it! Your users can now download and install your app from the Chrome Web Store and use it just like any other Chrome app.
+
+Update the App in the Chrome Web Store
+
+1. Update the manifest to have a later version.  Save.  Zip.
+
+2. Open Google Chrome and go to the [Chrome Web Store](https://chrome.google.com/webstore/devconsole/).  
+
+3. Select your app.  Then Click on "Package" on the left hand side.
+
